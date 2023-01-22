@@ -1,7 +1,7 @@
 
 package Vehiclesuc;
 
-public class Vehicle {
+public class Vehicle extends Engine implements Honkable {
 	private String make;
 	private int model;
 	private int year;
@@ -56,5 +56,10 @@ public class Vehicle {
 	}
 	public void honk() {
 		System.out.println("Honk Honk!");
+	}
+	@Override
+	public void startEngine() {
+		
+		
 	}
 }
